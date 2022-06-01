@@ -156,7 +156,7 @@ if __name__ == "__main__":
     # Imprime un mansaje con la acción ejecutada
     print ("A continuación se muestra el recorrido primero en anchura"
                     " (a partir del vértice 0)")
-    # Imprime recorrido
+    # Imprime el recorrido
     g.bfs_transversal(0)
     # Imprime salto
     print()
