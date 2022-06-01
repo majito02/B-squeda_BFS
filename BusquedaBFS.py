@@ -117,4 +117,21 @@ class Grafo:
         cola.put(nodo_inicial)
         # agrega a la lista visitada
         visitado.add(nodo_inicial)
+        
+        #Bucle de impresion de nodos
+        while not cola.empty():
+            # Quitar un vértice de la cola
+            nodo_actual = cola.get()
+            # Imprime el vertice
+            print(nodo_actual, end = " ")
+
+            # Obtener todos los vértices adyacentes del vértice eliminado. 
+            for (siguiente_nodo, peso) in self.m_lista_adyacencia[nodo_actual]:
+                # el nodo no ha sido visitado?
+                if siguiente_nodo not in visitado:
+                    #ponerlo en cola
+                    cola.put(siguiente_nodo)
+                    #marcarlo como visitado
+                    visitado.add(siguiente_nodo)
+
     print()
