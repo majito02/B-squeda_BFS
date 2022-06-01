@@ -51,8 +51,34 @@ class Grafo:
         self.m_dirigido = dirigido
         # Usamos un diccionario para implementar una lista de adyacencia      
         self.m_lista_adyacencia = {nodo: set() for nodo in self.m_nodos}
-	
-  
+        
+    def agregar_arista(self, nodo1, nodo2, peso=1):
+        """
+        Agrega un arista al Grafo
+
+        Si el argumento peso no es pasado,  toma como valor por defecto 1
+
+        Parametros
+        ----------
+        nodo1 : entero
+            Número de nodo1
+        nodo2 : entero
+            Número de nodo2
+        peso : entero (opcional)
+            Peso del arista. por defecto 1.
+
+        Retorna
+        -------
+        None
+        """
+
+        # Agregar nodo2 a lista en nodo1
+        self.m_lista_adyacencia[nodo1].add((nodo2, peso))
+        # No Dirigido?
+        if not self.m_dirigido:
+            # Agregar nodo 1 a lista en nodo2
+            self.m_lista_adyacencia[nodo2].add((nodo1, peso))
+        
     
    
     print()
