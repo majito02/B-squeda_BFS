@@ -51,7 +51,7 @@ class Grafo:
         self.m_dirigido = dirigido
         # Usamos un diccionario para implementar una lista de adyacencia      
         self.m_lista_adyacencia = {nodo: set() for nodo in self.m_nodos}
-        
+	
     def agregar_arista(self, nodo1, nodo2, peso=1):
         """
         Agrega un arista al Grafo
@@ -78,7 +78,7 @@ class Grafo:
         if not self.m_dirigido:
             # Agregar nodo 1 a lista en nodo2
             self.m_lista_adyacencia[nodo2].add((nodo1, peso))
-        
+    
     def imprimir_lista_adyacente(self):
         """
         Imprime la lista de adyacencia
@@ -96,5 +96,25 @@ class Grafo:
         for llave in self.m_lista_adyacencia.keys():
             # Imprimir nodo con la lista de adyacencia
             print("nodo", llave, ": ", self.m_lista_adyacencia[llave])
-   
+
+    def bfs_transversal(self, nodo_inicial):
+        """
+        Imprime el recorrido BFS (Búsqueda en anchura) de un vértice fuente dado y atraviesa vértices alcanzables desde s.
+
+        Parametros
+        ----------
+        nodo_inicial : entero
+            Nodo inicial del Grafo a imprimir
+
+        Retorna
+        -------
+        Recorrido de nodos ( 0 1 2 4 3 ...)
+        """
+        # Conjunto de nodos visitados para evitar bucles
+        visitado = set()
+        cola = Queue()
+        # agrega nodo_inicial a la cola
+        cola.put(nodo_inicial)
+        # agrega a la lista visitada
+        visitado.add(nodo_inicial)
     print()
