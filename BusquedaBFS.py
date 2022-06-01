@@ -117,8 +117,8 @@ class Grafo:
         cola.put(nodo_inicial)
         # agrega a la lista visitada
         visitado.add(nodo_inicial)
-        
-        #Bucle de impresion de nodos
+
+        # Bucle de impresion de nodos
         while not cola.empty():
             # Quitar un vértice de la cola
             nodo_actual = cola.get()
@@ -134,4 +134,29 @@ class Grafo:
                     #marcarlo como visitado
                     visitado.add(siguiente_nodo)
 
+#Verificacion de script ejecutado como principal
+if __name__ == "__main__":
+
+    # Crear un Ejemplo con una instancia de la clase `Grafo` con 5 nodos y no dirigido
+    g = Grafo(5, dirigido=False)
+
+    # agrega la arista al grafo con peso predeterminado = 1
+    g.agregar_arista(0, 1)
+    # agrega la arista al grafo con peso predeterminado = 1
+    g.agregar_arista(0, 2)
+    # agrega la arista al grafo con peso predeterminado = 1
+    g.agregar_arista(1, 2)
+    # agrega la arista al grafo con peso predeterminado = 1
+    g.agregar_arista(1, 4)
+    # agrega la arista al grafo con peso predeterminado = 1
+    g.agregar_arista(2, 3)
+
+    # Imprime la lista de adyacencia en el formulario nodo n: {(nodo, peso)}
+    g.imprimir_lista_adyacente()
+    # Imprime un mansaje con la acción ejecutada
+    print ("A continuación se muestra el recorrido primero en anchura"
+                    " (a partir del vértice 0)")
+    # Imprime recorrido
+    g.bfs_transversal(0)
+    # Imprime salto
     print()
