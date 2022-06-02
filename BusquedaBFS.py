@@ -138,15 +138,15 @@ class Grafo:
 if __name__ == "__main__":
     # Crear un Ejemplo con una instancia de la clase `Grafo` con 5 nodos y no dirigido
     g = Grafo(5, dirigido=False)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(2, 4)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregarála arista al grafo con peso predeterminado = 1
     g.agregar_arista(1, 0)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregarála arista al grafo con peso predeterminado = 1
     g.agregar_arista(3, 4)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(1, 3)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(2, 3)
 
     # Imprime la lista de adyacencia en el formulario nodo n: {(nodo, peso)}
@@ -161,17 +161,17 @@ if __name__ == "__main__":
 
     #Crear un Ejemplo con una instancia de la clase `Grafo` con 6 nodos y no dirigido
     g = Grafo(6, dirigido=False)
-    #agrega la arista al grafo con peso predeterminado = 2
+    #agregará la arista al grafo con peso predeterminado = 2
     g.agregar_arista(5, 0, 2)
-    #agrega la arista al grafo con peso predeterminado = 3
+    #agregará la arista al grafo con peso predeterminado = 3
     g.agregar_arista(2, 5, 3)
-    #agrega la arista al grafo con peso predeterminado = 4
+    #agregará la arista al grafo con peso predeterminado = 4
     g.agregar_arista(3, 4, 4)
-    #agrega la arista al grafo con peso predeterminado = 3
+    #agregará la arista al grafo con peso predeterminado = 3
     g.agregar_arista(1, 2, 3)
-    #agrega la arista al grafo con peso predeterminado = 2
+    #agregará la arista al grafo con peso predeterminado = 2
     g.agregar_arista(4, 5, 2)
-    #agrega la arista al grafo con peso predeterminado = 2
+    #agregará la arista al grafo con peso predeterminado = 2
     g.agregar_arista(2, 3, 2)
 
     # Imprime la lista de adyacencia en el formulario nodo n: {(nodo, peso)}
@@ -186,19 +186,19 @@ if __name__ == "__main__":
 
     #Crear un Ejemplo con una instancia de la clase `Grafo` con 7 nodos y no dirigido
     g = Grafo(7, dirigido=False)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(1, 3)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(2, 4)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(4, 5)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(6, 0)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(3, 6)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(2, 5)
-    #agrega la arista al grafo con peso predeterminado = 1
+    #agregará la arista al grafo con peso predeterminado = 1
     g.agregar_arista(6, 2)
 
     # Imprime la lista de adyacencia en el formulario nodo n: {(nodo, peso)}
