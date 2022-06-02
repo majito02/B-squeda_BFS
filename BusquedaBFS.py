@@ -113,7 +113,7 @@ class Grafo:
         # Conjunto de nodos visitados para evitar bucles
         visitado = set()
         cola = Queue()
-        # agrega nodo_inicial a la cola
+        # agregar nodo_inicial a la cola
         cola.put(nodo_inicial)
         # agrega a la lista visitada
         visitado.add(nodo_inicial)
